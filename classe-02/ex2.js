@@ -10,11 +10,9 @@ const ownerContact = {
 }
 
 const infosForSale = {
-  name: car.name,
-  year: car.year,
-  color: car.color,
-  phoneContact: ownerContact.phoneContact,
-  owner: ownerContact.owner + ' Lopes',
+  ...car,
+  ...ownerContact,
+  owner: "Daniel Lopes",
   price: 120000,
   onlySale: true
 }

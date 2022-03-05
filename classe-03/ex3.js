@@ -6,17 +6,11 @@ const tripData = {
   hour: '17:45'
 };
 
-function sayTripPath(name, origin, destination, date, hour) {
+function sayTripPath({ name, date, hour, origin, destination }) {
   console.log(`
     Olá ${name}, o seu voo que sai de ${origin} com destino a ${destination}
     está agendado para ${date} às ${hour}!
   `);
 };
 
-sayTripPath(
-  tripData.name,
-  tripData.origin,
-  tripData.destination,
-  tripData.date,
-  tripData.hour
-);
+sayTripPath(tripData);
